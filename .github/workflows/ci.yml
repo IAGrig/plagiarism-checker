@@ -47,6 +47,8 @@ jobs:
           java-version: 25
           cache: sbt
 
+      - uses: sbt/setup-sbt@v1
+
       - name: Wait for Qdrant
         run: |
           for i in {1..30}; do
